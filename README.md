@@ -1,8 +1,12 @@
 <img src="assets/banner.svg" alt="Bohdan Paraska — Full Stack Developer · Python, Odoo, React" width="100%">
 
-Full Stack developer from Zakarpattia, Ukraine. Four years of building web platforms,
-REST APIs and data services — and for the last stretch, custom **Odoo 17** modules that
-run real shops, kitchens and a production floor.
+Python developer from Zakarpattia, Ukraine. Four years of backend work — Django and
+FastAPI services, REST APIs, data pipelines and parsers — with React on the front when
+a project needs one.
+
+These days a good share of that Python goes into **Odoo**: custom ERP modules running
+real shops, kitchens and a production floor. Same language, same ORM instincts, just a
+far more opinionated framework wrapped around them.
 
 I like the problems where third-party APIs, messy business processes and a clear
 interface all have to meet in one place.
@@ -12,9 +16,13 @@ interface all have to meet in one place.
 
 <br>
 
-Full Stack розробник із Закарпаття. Чотири роки будую вебплатформи, REST API та сервіси
-обробки даних, а останнім часом — кастомні модулі **Odoo 17**, на яких працюють реальні
-магазини, кухні й виробничий цех.
+Python-розробник із Закарпаття. Чотири роки бекенду — сервіси на Django та FastAPI,
+REST API, конвеєри обробки даних і парсери, плюс React на фронті, коли проєкт цього
+потребує.
+
+Останнім часом чимала частина цього Python іде в **Odoo**: кастомні ERP-модулі, на яких
+працюють реальні магазини, кухні й виробничий цех. Та сама мова, ті самі звички роботи
+з ORM — просто значно жорсткіший фреймворк навколо них.
 
 Люблю задачі, де в одному місці сходяться чужі API, заплутані бізнес-процеси та
 зрозумілий інтерфейс.
@@ -23,26 +31,30 @@ Full Stack розробник із Закарпаття. Чотири роки �
 
 ---
 
-### What I'm working on
+### What I do
 
-**Odoo 17 modules at [SkyTek](https://skytek.com.ua)** — a business service centre that
-automates retail, HoReCa and manufacturing.
+**Backend and APIs.** Django and FastAPI services, RESTful API design, webhooks and
+third-party integrations, authentication, user portals and admin back-offices. This is
+the part I have been doing longest and reach for first.
 
-- **Retail & POS** — lot and serial tracking, document chains, blocking negative-stock
-  sales, fiscal receipts and excise, mobile POS. Lead contributor on the module stack.
-- **Manufacturing ERP** — greenfield modules on native MRP/Stock/Sale for a producer in
-  Slovakia: FEFO lot traceability with expiry dates, recipe cost calculation, B2B portal.
-- **Waiter web app** — a mobile front end over Odoo POS: open bills, splitting and
-  merging, kitchen tickets that print only what changed.
+**Data and automation.** Parsers that survive markup changes, pipelines over large data
+sets, Redis caching, query tuning, scheduled jobs. Most of my commercial work has had a
+data problem hiding somewhere inside it.
 
-The rule I work by: never edit vendor code. Everything is extended through `_inherit`,
-`xpath` and our own modules — it disciplines the architecture better than any linter.
+**ERP on Python — Odoo 17.** Custom modules for retail and POS (lot and serial tracking,
+document chains, blocking negative-stock sales, fiscal receipts, excise) and a greenfield
+manufacturing stack on native MRP/Stock/Sale with FEFO lot traceability and recipe cost
+calculation. One rule I do not bend: never edit vendor code — everything is extended
+through `_inherit`, `xpath` and our own modules.
+
+**Frontend when it is needed.** React for platforms and landing pages, vanilla JS where a
+framework would be overkill, PyQt6 when the thing belongs on the desktop.
 
 ---
 
 ### Stack
 
-<img src="assets/stack.svg" alt="Odoo, Python, React, PostgreSQL, Docker and the rest of the stack" width="100%">
+<img src="assets/stack.svg" alt="Python, Django, FastAPI, PostgreSQL, Odoo, React, Docker and the rest of the stack" width="100%">
 
 ---
 

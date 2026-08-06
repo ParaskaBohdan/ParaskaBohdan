@@ -1,60 +1,72 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 312" width="1000" height="312" role="img" aria-label="Tech stack">
   <rect width="1000" height="312" fill="#0B0B0C"/>
   <rect x="0.5" y="0.5" width="999" height="311" fill="none" stroke="#1F1F22"/>
-  <text x="24" y="44" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="11" fill="#5A5A56">ODOO / ERP</text>
+  <text x="24" y="44" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="11" fill="#5A5A56">BACKEND</text>
   <line x1="24" y1="52" x2="152" y2="52" stroke="#232327"/>
-  <rect x="176" y="26" width="80.6" height="26" rx="2" fill="#12301E" stroke="#2F6B44"/>
-  <text x="189" y="43" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#4ADE80" textLength="54.6" lengthAdjust="spacing">Odoo 17</text>
-  <rect x="262.6" y="26" width="88.4" height="26" rx="2" fill="#12301E" stroke="#2F6B44"/>
-  <text x="275.6" y="43" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#4ADE80" textLength="62.4" lengthAdjust="spacing">Odoo ORM</text>
-  <rect x="357" y="26" width="57.2" height="26" rx="2" fill="#12301E" stroke="#2F6B44"/>
-  <text x="370" y="43" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#4ADE80" textLength="31.2" lengthAdjust="spacing">QWeb</text>
-  <rect x="420.2" y="26" width="49.4" height="26" rx="2" fill="#12301E" stroke="#2F6B44"/>
-  <text x="433.2" y="43" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#4ADE80" textLength="23.4" lengthAdjust="spacing">OWL</text>
-  <rect x="475.6" y="26" width="119.6" height="26" rx="2" fill="#131315" stroke="#26262B"/>
-  <text x="488.6" y="43" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="93.6" lengthAdjust="spacing">Record rules</text>
-  <rect x="601.2" y="26" width="127.4" height="26" rx="2" fill="#131315" stroke="#26262B"/>
-  <text x="614.2" y="43" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="101.4" lengthAdjust="spacing">Point of Sale</text>
-  <rect x="734.6" y="26" width="111.8" height="26" rx="2" fill="#131315" stroke="#26262B"/>
-  <text x="747.6" y="43" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="85.8" lengthAdjust="spacing">MRP / Stock</text>
-  <rect x="176" y="60" width="127.4" height="26" rx="2" fill="#131315" stroke="#26262B"/>
-  <text x="189" y="77" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="101.4" lengthAdjust="spacing">PRRO / fiscal</text>
-  <text x="24" y="126" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="11" fill="#5A5A56">BACKEND</text>
-  <line x1="24" y1="134" x2="152" y2="134" stroke="#232327"/>
-  <rect x="176" y="108" width="72.8" height="26" rx="2" fill="#12301E" stroke="#2F6B44"/>
-  <text x="189" y="125" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#4ADE80" textLength="46.8" lengthAdjust="spacing">Python</text>
-  <rect x="254.8" y="108" width="72.8" height="26" rx="2" fill="#12301E" stroke="#2F6B44"/>
-  <text x="267.8" y="125" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#4ADE80" textLength="46.8" lengthAdjust="spacing">Django</text>
-  <rect x="333.6" y="108" width="80.6" height="26" rx="2" fill="#12301E" stroke="#2F6B44"/>
-  <text x="346.6" y="125" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#4ADE80" textLength="54.6" lengthAdjust="spacing">FastAPI</text>
-  <rect x="420.2" y="108" width="88.4" height="26" rx="2" fill="#131315" stroke="#26262B"/>
-  <text x="433.2" y="125" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="62.4" lengthAdjust="spacing">REST API</text>
-  <rect x="514.6" y="108" width="72.8" height="26" rx="2" fill="#131315" stroke="#26262B"/>
-  <text x="527.6" y="125" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="46.8" lengthAdjust="spacing">Celery</text>
-  <rect x="593.4" y="108" width="127.4" height="26" rx="2" fill="#131315" stroke="#26262B"/>
-  <text x="606.4" y="125" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="101.4" lengthAdjust="spacing">BeautifulSoup</text>
-  <text x="24" y="174" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="11" fill="#5A5A56">FRONTEND</text>
-  <line x1="24" y1="182" x2="152" y2="182" stroke="#232327"/>
-  <rect x="176" y="156" width="65" height="26" rx="2" fill="#12301E" stroke="#2F6B44"/>
-  <text x="189" y="173" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#4ADE80" textLength="39" lengthAdjust="spacing">React</text>
-  <rect x="247" y="156" width="143" height="26" rx="2" fill="#12301E" stroke="#2F6B44"/>
-  <text x="260" y="173" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#4ADE80" textLength="117" lengthAdjust="spacing">JavaScript ES6+</text>
-  <rect x="396" y="156" width="65" height="26" rx="2" fill="#131315" stroke="#26262B"/>
-  <text x="409" y="173" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="39" lengthAdjust="spacing">HTML5</text>
-  <rect x="467" y="156" width="57.2" height="26" rx="2" fill="#131315" stroke="#26262B"/>
-  <text x="480" y="173" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="31.2" lengthAdjust="spacing">CSS3</text>
-  <rect x="530.2" y="156" width="65" height="26" rx="2" fill="#131315" stroke="#26262B"/>
-  <text x="543.2" y="173" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="39" lengthAdjust="spacing">PyQt6</text>
-  <text x="24" y="222" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="11" fill="#5A5A56">DATABASES</text>
+  <rect x="176" y="26" width="72.8" height="26" rx="2" fill="#12301E" stroke="#2F6B44"/>
+  <text x="189" y="43" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#4ADE80" textLength="46.8" lengthAdjust="spacing">Python</text>
+  <rect x="254.8" y="26" width="72.8" height="26" rx="2" fill="#12301E" stroke="#2F6B44"/>
+  <text x="267.8" y="43" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#4ADE80" textLength="46.8" lengthAdjust="spacing">Django</text>
+  <rect x="333.6" y="26" width="80.6" height="26" rx="2" fill="#12301E" stroke="#2F6B44"/>
+  <text x="346.6" y="43" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#4ADE80" textLength="54.6" lengthAdjust="spacing">FastAPI</text>
+  <rect x="420.2" y="26" width="88.4" height="26" rx="2" fill="#12301E" stroke="#2F6B44"/>
+  <text x="433.2" y="43" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#4ADE80" textLength="62.4" lengthAdjust="spacing">REST API</text>
+  <rect x="514.6" y="26" width="72.8" height="26" rx="2" fill="#131315" stroke="#26262B"/>
+  <text x="527.6" y="43" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="46.8" lengthAdjust="spacing">Celery</text>
+  <rect x="593.4" y="26" width="127.4" height="26" rx="2" fill="#131315" stroke="#26262B"/>
+  <text x="606.4" y="43" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="101.4" lengthAdjust="spacing">BeautifulSoup</text>
+  <rect x="726.8" y="26" width="65" height="26" rx="2" fill="#131315" stroke="#26262B"/>
+  <text x="739.8" y="43" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="39" lengthAdjust="spacing">httpx</text>
+  <text x="24" y="92" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="11" fill="#5A5A56">DATA</text>
+  <line x1="24" y1="100" x2="152" y2="100" stroke="#232327"/>
+  <rect x="176" y="74" width="104" height="26" rx="2" fill="#12301E" stroke="#2F6B44"/>
+  <text x="189" y="91" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#4ADE80" textLength="78" lengthAdjust="spacing">PostgreSQL</text>
+  <rect x="286" y="74" width="65" height="26" rx="2" fill="#131315" stroke="#26262B"/>
+  <text x="299" y="91" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="39" lengthAdjust="spacing">Redis</text>
+  <rect x="357" y="74" width="72.8" height="26" rx="2" fill="#131315" stroke="#26262B"/>
+  <text x="370" y="91" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="46.8" lengthAdjust="spacing">SQLite</text>
+  <rect x="435.8" y="74" width="65" height="26" rx="2" fill="#131315" stroke="#26262B"/>
+  <text x="448.8" y="91" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="39" lengthAdjust="spacing">MySQL</text>
+  <rect x="506.8" y="74" width="72.8" height="26" rx="2" fill="#131315" stroke="#26262B"/>
+  <text x="519.8" y="91" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="46.8" lengthAdjust="spacing">Pandas</text>
+  <rect x="585.6" y="74" width="65" height="26" rx="2" fill="#131315" stroke="#26262B"/>
+  <text x="598.6" y="91" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="39" lengthAdjust="spacing">NumPy</text>
+  <rect x="656.6" y="74" width="65" height="26" rx="2" fill="#131315" stroke="#26262B"/>
+  <text x="669.6" y="91" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="39" lengthAdjust="spacing">SciPy</text>
+  <rect x="727.6" y="74" width="119.6" height="26" rx="2" fill="#131315" stroke="#26262B"/>
+  <text x="740.6" y="91" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="93.6" lengthAdjust="spacing">scikit-learn</text>
+  <rect x="853.2" y="74" width="80.6" height="26" rx="2" fill="#131315" stroke="#26262B"/>
+  <text x="866.2" y="91" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="54.6" lengthAdjust="spacing">Jupyter</text>
+  <text x="24" y="140" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="11" fill="#5A5A56">ODOO / ERP</text>
+  <line x1="24" y1="148" x2="152" y2="148" stroke="#232327"/>
+  <rect x="176" y="122" width="80.6" height="26" rx="2" fill="#12301E" stroke="#2F6B44"/>
+  <text x="189" y="139" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#4ADE80" textLength="54.6" lengthAdjust="spacing">Odoo 17</text>
+  <rect x="262.6" y="122" width="88.4" height="26" rx="2" fill="#12301E" stroke="#2F6B44"/>
+  <text x="275.6" y="139" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#4ADE80" textLength="62.4" lengthAdjust="spacing">Odoo ORM</text>
+  <rect x="357" y="122" width="57.2" height="26" rx="2" fill="#131315" stroke="#26262B"/>
+  <text x="370" y="139" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="31.2" lengthAdjust="spacing">QWeb</text>
+  <rect x="420.2" y="122" width="49.4" height="26" rx="2" fill="#131315" stroke="#26262B"/>
+  <text x="433.2" y="139" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="23.4" lengthAdjust="spacing">OWL</text>
+  <rect x="475.6" y="122" width="119.6" height="26" rx="2" fill="#131315" stroke="#26262B"/>
+  <text x="488.6" y="139" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="93.6" lengthAdjust="spacing">Record rules</text>
+  <rect x="601.2" y="122" width="127.4" height="26" rx="2" fill="#131315" stroke="#26262B"/>
+  <text x="614.2" y="139" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="101.4" lengthAdjust="spacing">Point of Sale</text>
+  <rect x="734.6" y="122" width="111.8" height="26" rx="2" fill="#131315" stroke="#26262B"/>
+  <text x="747.6" y="139" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="85.8" lengthAdjust="spacing">MRP / Stock</text>
+  <rect x="176" y="156" width="127.4" height="26" rx="2" fill="#131315" stroke="#26262B"/>
+  <text x="189" y="173" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="101.4" lengthAdjust="spacing">PRRO / fiscal</text>
+  <text x="24" y="222" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="11" fill="#5A5A56">FRONTEND</text>
   <line x1="24" y1="230" x2="152" y2="230" stroke="#232327"/>
-  <rect x="176" y="204" width="104" height="26" rx="2" fill="#12301E" stroke="#2F6B44"/>
-  <text x="189" y="221" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#4ADE80" textLength="78" lengthAdjust="spacing">PostgreSQL</text>
-  <rect x="286" y="204" width="65" height="26" rx="2" fill="#131315" stroke="#26262B"/>
-  <text x="299" y="221" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="39" lengthAdjust="spacing">Redis</text>
-  <rect x="357" y="204" width="65" height="26" rx="2" fill="#131315" stroke="#26262B"/>
-  <text x="370" y="221" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="39" lengthAdjust="spacing">MySQL</text>
-  <rect x="428" y="204" width="72.8" height="26" rx="2" fill="#131315" stroke="#26262B"/>
-  <text x="441" y="221" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="46.8" lengthAdjust="spacing">SQLite</text>
+  <rect x="176" y="204" width="65" height="26" rx="2" fill="#12301E" stroke="#2F6B44"/>
+  <text x="189" y="221" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#4ADE80" textLength="39" lengthAdjust="spacing">React</text>
+  <rect x="247" y="204" width="143" height="26" rx="2" fill="#131315" stroke="#26262B"/>
+  <text x="260" y="221" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="117" lengthAdjust="spacing">JavaScript ES6+</text>
+  <rect x="396" y="204" width="65" height="26" rx="2" fill="#131315" stroke="#26262B"/>
+  <text x="409" y="221" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="39" lengthAdjust="spacing">HTML5</text>
+  <rect x="467" y="204" width="57.2" height="26" rx="2" fill="#131315" stroke="#26262B"/>
+  <text x="480" y="221" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="31.2" lengthAdjust="spacing">CSS3</text>
+  <rect x="530.2" y="204" width="65" height="26" rx="2" fill="#131315" stroke="#26262B"/>
+  <text x="543.2" y="221" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#C8C8C4" textLength="39" lengthAdjust="spacing">PyQt6</text>
   <text x="24" y="270" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="11" fill="#5A5A56">DEVOPS</text>
   <line x1="24" y1="278" x2="152" y2="278" stroke="#232327"/>
   <rect x="176" y="252" width="72.8" height="26" rx="2" fill="#12301E" stroke="#2F6B44"/>
