@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" width="1000" height="260" role="img" aria-label="Bohdan Paraska — Full Stack Developer">
+  <defs>
+    <radialGradient id="fade" cx="28%" cy="0%" r="95%">
+      <stop offset="0" stop-color="#fff" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="gridmask"><rect width="1000" height="260" fill="url(#fade)"/></mask>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M50 0 L0 0 0 50" fill="none" stroke="#1E1E22" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4ADE80"/>
+      <stop offset="1" stop-color="#4ADE80" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="260" fill="#0B0B0C"/>
+  <rect width="1000" height="260" fill="url(#grid)" mask="url(#gridmask)"/>
+  <rect x="0" y="0" width="1000" height="2" fill="url(#glow)"/>
+
+  <!-- left column -->
+  <text x="56" y="76" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace"
+        font-size="13" fill="#4ADE80" textLength="228" lengthAdjust="spacing">// FULL STACK DEVELOPER</text>
+
+  <text x="56" y="136" font-family="'DejaVu Sans',Helvetica,Arial,sans-serif" font-size="52"
+        font-weight="600" fill="#E8E8E6" textLength="462" lengthAdjust="spacing">BOHDAN PARASKA</text>
+
+  <rect x="56" y="154" width="58" height="3" fill="#4ADE80"/>
+
+  <text x="56" y="190" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace"
+        font-size="16" fill="#8A8A85" textLength="418" lengthAdjust="spacing">Python · Odoo · React · PostgreSQL</text>
+
+  <circle cx="61" cy="215" r="4" fill="#4ADE80"/>
+  <text x="74" y="220" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace"
+        font-size="13" fill="#6E6E6A" textLength="290" lengthAdjust="spacing">SkyTek · Zakarpattia, Ukraine</text>
+
+  <!-- stat card -->
+  <rect x="684" y="52" width="260" height="156" fill="#101012" stroke="#232327" stroke-width="1"/>
+  <line x1="814" y1="52" x2="814" y2="208" stroke="#232327" stroke-width="1"/>
+  <line x1="684" y1="130" x2="944" y2="130" stroke="#232327" stroke-width="1"/>
+
+  <text x="702" y="98" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="26" fill="#E8E8E6">4</text>
+  <text x="702" y="116" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="10" fill="#5A5A56" textLength="76" lengthAdjust="spacing">YEARS EXP.</text>
+
+  <text x="832" y="98" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="26" fill="#E8E8E6">4</text>
+  <text x="832" y="116" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="10" fill="#5A5A56" textLength="76" lengthAdjust="spacing">COMPANIES</text>
+
+  <text x="702" y="176" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="26" fill="#E8E8E6">8</text>
+  <text x="702" y="194" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="10" fill="#5A5A56" textLength="68" lengthAdjust="spacing">PROJECTS</text>
+
+  <text x="832" y="176" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="26" fill="#4ADE80">B2</text>
+  <text x="832" y="194" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="10" fill="#5A5A56" textLength="60" lengthAdjust="spacing">ENGLISH</text>
+</svg>
