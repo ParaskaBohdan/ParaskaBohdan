@@ -1,53 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" width="1000" height="260" role="img" aria-label="Bohdan Paraska — Full Stack Developer">
   <defs>
-    <radialGradient id="fade" cx="28%" cy="0%" r="95%">
-      <stop offset="0" stop-color="#fff" stop-opacity=".85"/>
-      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
-    </radialGradient>
-    <mask id="gridmask"><rect width="1000" height="260" fill="url(#fade)"/></mask>
-    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
-      <path d="M50 0 L0 0 0 50" fill="none" stroke="#1E1E22" stroke-width="1"/>
-    </pattern>
-    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#4ADE80"/>
-      <stop offset="1" stop-color="#4ADE80" stop-opacity="0"/>
-    </linearGradient>
+    <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="7" cy="7" r="3" fill="#9e000c"/></pattern>
+    <linearGradient id="fade" x1="1" y1="0" x2="0.3" y2="1"><stop offset="0.05" stop-color="#fff"/><stop offset="0.7" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <mask id="dotmask"><rect width="1000" height="260" fill="url(#fade)"/></mask>
+    <clipPath id="slab"><polygon points="720,0 1000,0 1000,260 640,260 684,166 652,130"/></clipPath>
   </defs>
+  <rect width="1000" height="260" fill="#0d0d0d"/>
+  <polygon points="720,0 1000,0 1000,260 640,260 684,166 652,130" fill="#e60012"/>
+  <g clip-path="url(#slab)"><rect width="1000" height="260" fill="url(#dots)" mask="url(#dotmask)"/></g>
+  <polygon transform="translate(650 14) rotate(-14 24 24) scale(0.48)" fill="#ffe600" points="50,0 61,35 98,35 68,57 79,91 50,70 21,91 32,57 2,35 39,35"/>
 
-  <rect width="1000" height="260" fill="#0B0B0C"/>
-  <rect width="1000" height="260" fill="url(#grid)" mask="url(#gridmask)"/>
-  <rect x="0" y="0" width="1000" height="2" fill="url(#glow)"/>
+  <text x="56" y="62" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" font-weight="500" fill="#ff4d5a" textLength="228" lengthAdjust="spacing">// FULL STACK DEVELOPER</text>
+  <g transform="translate(76 112) rotate(-4)"><rect x="-20" y="-28" width="40" height="56" fill="#f5f1ea"/><text y="15" text-anchor="middle" font-family="'Arial Black','Segoe UI Black','Helvetica Neue','DejaVu Sans',Arial,sans-serif" font-size="42" font-weight="900" fill="#0d0d0d">B</text></g>
+  <g transform="translate(117 115) rotate(3)"><rect x="-20" y="-28" width="40" height="56" fill="#e60012"/><text y="15" text-anchor="middle" font-family="'Arial Black','Segoe UI Black','Helvetica Neue','DejaVu Sans',Arial,sans-serif" font-size="42" font-weight="900" fill="#ffffff">O</text></g>
+  <g transform="translate(158 112) rotate(-2)"><text y="15" text-anchor="middle" font-family="'Arial Black','Segoe UI Black','Helvetica Neue','DejaVu Sans',Arial,sans-serif" font-size="42" font-weight="900" fill="#f5f1ea">H</text></g>
+  <g transform="translate(199 110) rotate(5)"><rect x="-18" y="-26" width="36" height="52" fill="#0d0d0d" stroke="#f5f1ea" stroke-width="4"/><text y="15" text-anchor="middle" font-family="'Arial Black','Segoe UI Black','Helvetica Neue','DejaVu Sans',Arial,sans-serif" font-size="42" font-weight="900" fill="#f5f1ea">D</text></g>
+  <g transform="translate(240 112) rotate(-4)"><rect x="-20" y="-28" width="40" height="56" fill="#f5f1ea"/><text y="15" text-anchor="middle" font-family="'Arial Black','Segoe UI Black','Helvetica Neue','DejaVu Sans',Arial,sans-serif" font-size="42" font-weight="900" fill="#0d0d0d">A</text></g>
+  <g transform="translate(281 115) rotate(3)"><rect x="-20" y="-28" width="40" height="56" fill="#e60012"/><text y="15" text-anchor="middle" font-family="'Arial Black','Segoe UI Black','Helvetica Neue','DejaVu Sans',Arial,sans-serif" font-size="42" font-weight="900" fill="#ffffff">N</text></g>
+  <g transform="translate(342 112) rotate(-4)"><rect x="-20" y="-28" width="40" height="56" fill="#f5f1ea"/><text y="15" text-anchor="middle" font-family="'Arial Black','Segoe UI Black','Helvetica Neue','DejaVu Sans',Arial,sans-serif" font-size="42" font-weight="900" fill="#0d0d0d">P</text></g>
+  <g transform="translate(383 115) rotate(3)"><rect x="-20" y="-28" width="40" height="56" fill="#e60012"/><text y="15" text-anchor="middle" font-family="'Arial Black','Segoe UI Black','Helvetica Neue','DejaVu Sans',Arial,sans-serif" font-size="42" font-weight="900" fill="#ffffff">A</text></g>
+  <g transform="translate(424 112) rotate(-2)"><text y="15" text-anchor="middle" font-family="'Arial Black','Segoe UI Black','Helvetica Neue','DejaVu Sans',Arial,sans-serif" font-size="42" font-weight="900" fill="#f5f1ea">R</text></g>
+  <g transform="translate(465 110) rotate(5)"><rect x="-18" y="-26" width="36" height="52" fill="#0d0d0d" stroke="#f5f1ea" stroke-width="4"/><text y="15" text-anchor="middle" font-family="'Arial Black','Segoe UI Black','Helvetica Neue','DejaVu Sans',Arial,sans-serif" font-size="42" font-weight="900" fill="#f5f1ea">A</text></g>
+  <g transform="translate(506 112) rotate(-4)"><rect x="-20" y="-28" width="40" height="56" fill="#f5f1ea"/><text y="15" text-anchor="middle" font-family="'Arial Black','Segoe UI Black','Helvetica Neue','DejaVu Sans',Arial,sans-serif" font-size="42" font-weight="900" fill="#0d0d0d">S</text></g>
+  <g transform="translate(547 115) rotate(3)"><rect x="-20" y="-28" width="40" height="56" fill="#e60012"/><text y="15" text-anchor="middle" font-family="'Arial Black','Segoe UI Black','Helvetica Neue','DejaVu Sans',Arial,sans-serif" font-size="42" font-weight="900" fill="#ffffff">K</text></g>
+  <g transform="translate(588 112) rotate(-2)"><text y="15" text-anchor="middle" font-family="'Arial Black','Segoe UI Black','Helvetica Neue','DejaVu Sans',Arial,sans-serif" font-size="42" font-weight="900" fill="#f5f1ea">A</text></g>
 
-  <!-- left column -->
-  <text x="56" y="76" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace"
-        font-size="13" fill="#4ADE80" textLength="228" lengthAdjust="spacing">// FULL STACK DEVELOPER</text>
+  <rect x="0" y="0" width="72" height="8" fill="#e60012" transform="translate(58 158) skewX(-10)"/>
+  <text x="56" y="198" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="16" fill="#b8b2a8" textLength="418" lengthAdjust="spacing">Python · Odoo · React · PostgreSQL</text>
+  <rect x="-4" y="-4" width="8" height="8" fill="#e60012" transform="translate(61 221) rotate(45)"/>
+  <text x="74" y="226" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#8f8a82" textLength="290" lengthAdjust="spacing">SkyTek · Zakarpattia, Ukraine</text>
 
-  <text x="56" y="136" font-family="'DejaVu Sans',Helvetica,Arial,sans-serif" font-size="52"
-        font-weight="600" fill="#E8E8E6" textLength="462" lengthAdjust="spacing">BOHDAN PARASKA</text>
-
-  <rect x="56" y="154" width="58" height="3" fill="#4ADE80"/>
-
-  <text x="56" y="190" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace"
-        font-size="16" fill="#8A8A85" textLength="418" lengthAdjust="spacing">Python · Odoo · React · PostgreSQL</text>
-
-  <circle cx="61" cy="215" r="4" fill="#4ADE80"/>
-  <text x="74" y="220" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace"
-        font-size="13" fill="#6E6E6A" textLength="290" lengthAdjust="spacing">SkyTek · Zakarpattia, Ukraine</text>
-
-  <!-- stat card -->
-  <rect x="684" y="52" width="260" height="156" fill="#101012" stroke="#232327" stroke-width="1"/>
-  <line x1="814" y1="52" x2="814" y2="208" stroke="#232327" stroke-width="1"/>
-  <line x1="684" y1="130" x2="944" y2="130" stroke="#232327" stroke-width="1"/>
-
-  <text x="702" y="98" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="26" fill="#E8E8E6">4</text>
-  <text x="702" y="116" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="10" fill="#5A5A56" textLength="76" lengthAdjust="spacing">YEARS EXP.</text>
-
-  <text x="832" y="98" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="26" fill="#E8E8E6">4</text>
-  <text x="832" y="116" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="10" fill="#5A5A56" textLength="76" lengthAdjust="spacing">COMPANIES</text>
-
-  <text x="702" y="176" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="26" fill="#E8E8E6">8</text>
-  <text x="702" y="194" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="10" fill="#5A5A56" textLength="68" lengthAdjust="spacing">PROJECTS</text>
-
-  <text x="832" y="176" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="26" fill="#4ADE80">B2</text>
-  <text x="832" y="194" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="10" fill="#5A5A56" textLength="60" lengthAdjust="spacing">ENGLISH</text>
+  <g transform="rotate(3 836 130)">
+    <rect x="726" y="64" width="240" height="144" fill="#f5f1ea"/>
+    <rect x="718" y="56" width="240" height="144" fill="#171717" stroke="#f5f1ea" stroke-width="4"/>
+    <line x1="838" y1="58" x2="838" y2="198" stroke="#2e2e2e" stroke-width="2"/>
+    <line x1="720" y1="128" x2="956" y2="128" stroke="#2e2e2e" stroke-width="2"/>
+    <text x="736" y="96" font-family="'Arial Black','Segoe UI Black','Helvetica Neue','DejaVu Sans',Arial,sans-serif" font-size="28" font-weight="900" fill="#f5f1ea">4</text>
+    <text x="736" y="114" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="10" fill="#8f8a82" letter-spacing="1.2">YEARS EXP.</text>
+    <text x="854" y="96" font-family="'Arial Black','Segoe UI Black','Helvetica Neue','DejaVu Sans',Arial,sans-serif" font-size="28" font-weight="900" fill="#f5f1ea">4</text>
+    <text x="854" y="114" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="10" fill="#8f8a82" letter-spacing="1.2">COMPANIES</text>
+    <text x="736" y="168" font-family="'Arial Black','Segoe UI Black','Helvetica Neue','DejaVu Sans',Arial,sans-serif" font-size="28" font-weight="900" fill="#f5f1ea">8</text>
+    <text x="736" y="186" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="10" fill="#8f8a82" letter-spacing="1.2">PROJECTS</text>
+    <text x="854" y="168" font-family="'Arial Black','Segoe UI Black','Helvetica Neue','DejaVu Sans',Arial,sans-serif" font-size="28" font-weight="900" fill="#e60012">B2</text>
+    <text x="854" y="186" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="10" fill="#8f8a82" letter-spacing="1.2">ENGLISH</text>
+  </g>
 </svg>
