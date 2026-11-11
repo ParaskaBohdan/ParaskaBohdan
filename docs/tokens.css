@@ -1,0 +1,75 @@
+/* Phantom Portfolio — generated from tokens.json */
+:root, [data-theme="dark"] {
+  --bg: #0d0d0d;
+  --surface: #171717;
+  --surface-raised: #222222;
+  --ink: #f5f1ea;
+  --ink-muted: #b8b2a8;
+  --ink-dim: #8f8a82;
+  --line: #2e2e2e;
+  --line-strong: #f5f1ea;
+  --red: #e60012;
+  --red-deep: #9e000c;
+  --red-text: #ff4d5a;
+  --on-red: #ffffff;
+  --yellow: #ffe600;
+  --on-yellow: #0d0d0d;
+  --focus: #ffe600;
+  --halftone: #3a3a3a;
+  --shadow-hard: 6px 6px 0 #f5f1ea;
+  --shadow-red: 8px 8px 0 #e60012;
+  --shadow-deep: 6px 6px 0 #9e000c;
+}
+[data-theme="light"] {
+  --bg: #f5f1ea;
+  --surface: #ffffff;
+  --surface-raised: #e9e3d8;
+  --ink: #0d0d0d;
+  --ink-muted: #45423e;
+  --ink-dim: #66625c;
+  --line: #d6d0c4;
+  --line-strong: #0d0d0d;
+  --red: #e60012;
+  --red-deep: #9e000c;
+  --red-text: #c2000f;
+  --on-red: #ffffff;
+  --yellow: #ffe600;
+  --on-yellow: #0d0d0d;
+  --focus: #0d0d0d;
+  --halftone: #c9c2b4;
+  --shadow-hard: 6px 6px 0 #0d0d0d;
+  --shadow-red: 8px 8px 0 #e60012;
+  --shadow-deep: 6px 6px 0 #9e000c;
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 72px;
+  --space-9: 96px;
+  --radius-none: 0px;
+  --radius-chip: 2px;
+  --tilt-skew: -10deg;
+  --tilt-left: -4deg;
+  --tilt-right: 3deg;
+  --stroke-thin: 2px;
+  --stroke-bold: 4px;
+  --font-display: "Dela Gothic One", "Arial Black", Impact, sans-serif;
+  --font-sans: "Golos Text", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "DejaVu Sans Mono", Menlo, Consolas, monospace;
+}
+.display-xl { font-family: var(--font-display); font-size: 84px; line-height: 1; font-weight: 400; }
+.display-lg { font-family: var(--font-display); font-size: 40px; line-height: 1; font-weight: 400; }
+.display-md { font-family: var(--font-display); font-size: 28px; line-height: 1; font-weight: 400; }
+.display-sm { font-family: var(--font-display); font-size: 22px; line-height: 1.2; font-weight: 400; }
+.display-xs { font-family: var(--font-display); font-size: 15px; line-height: 1; font-weight: 400; letter-spacing: 0.04em; }
+.body-lg { font-family: var(--font-sans); font-size: 18px; line-height: 28px; font-weight: 400; }
+.body { font-family: var(--font-sans); font-size: 16px; line-height: 26px; font-weight: 400; }
+.body-sm { font-family: var(--font-sans); font-size: 15px; line-height: 24px; font-weight: 400; }
+.mono-lg { font-family: var(--font-mono); font-size: 18px; line-height: 28px; font-weight: 400; }
+.mono { font-family: var(--font-mono); font-size: 13px; line-height: 20px; font-weight: 500; }
+.label { font-family: var(--font-mono); font-size: 11px; line-height: 1.4; font-weight: 500; letter-spacing: 0.12em; }
