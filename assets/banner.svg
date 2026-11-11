@@ -28,7 +28,7 @@
   <rect x="0" y="0" width="72" height="8" fill="#e60012" transform="translate(58 158) skewX(-10)"/>
   <text x="56" y="198" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="16" fill="#b8b2a8" textLength="418" lengthAdjust="spacing">Python · Odoo · React · PostgreSQL</text>
   <rect x="-4" y="-4" width="8" height="8" fill="#e60012" transform="translate(61 221) rotate(45)"/>
-  <text x="74" y="226" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#8f8a82" textLength="290" lengthAdjust="spacing">SkyTek · Zakarpattia, Ukraine</text>
+  <text x="74" y="226" font-family="ui-monospace,'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="13" fill="#8f8a82" textLength="220" lengthAdjust="spacing">SkyTek · Lviv, Ukraine</text>
 
   <g transform="rotate(3 836 130)">
     <rect x="726" y="64" width="240" height="144" fill="#f5f1ea"/>

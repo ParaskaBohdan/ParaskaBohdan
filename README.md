@@ -1,6 +1,6 @@
 <img src="assets/banner.svg" alt="Bohdan Paraska — Full Stack Developer · Python, Odoo, React" width="100%">
 
-Python developer from Zakarpattia, Ukraine. Four years of backend work — Django and
+Python developer from Zakarpattia, now based in Lviv, Ukraine. Four years of backend work — Django and
 FastAPI services, REST APIs, data pipelines and parsers — with React on the front when
 a project needs one.
 
@@ -16,7 +16,7 @@ interface all have to meet in one place.
 
 <br>
 
-Python-розробник із Закарпаття. Чотири роки бекенду — сервіси на Django та FastAPI,
+Python-розробник із Закарпаття, зараз мешкаю у Львові. Чотири роки бекенду — сервіси на Django та FastAPI,
 REST API, конвеєри обробки даних і парсери, плюс React на фронті, коли проєкт цього
 потребує.
 
@@ -75,7 +75,7 @@ mainly pet projects and client sites.
 ### Where to find me
 
 - **Email** — [bogdannparaska@gmail.com](mailto:bogdannparaska@gmail.com)
-- **Location** — Zakarpattia, Ukraine · open to remote and hybrid
+- **Location** — Lviv, Ukraine · open to remote and hybrid
 - **Languages** — Ukrainian (native) · English (B2)
 
 <!-- Once the portfolio is deployed, drop the URL in here and uncomment:

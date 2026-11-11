@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bohdan Paraska — Full Stack Developer</title>
-<meta name="description" content="Python developer from Zakarpattia, Ukraine. Django, FastAPI, Odoo, React.">
+<meta name="description" content="Python developer based in Lviv, Ukraine. Django, FastAPI, Odoo, React.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="tokens.css">
@@ -12,6 +12,8 @@
 <style>html { scroll-behavior: smooth; scroll-padding-top: 72px; } html, body { margin: 0; }</style>
 </head>
 <body class="pt-page">
+<script>document.documentElement.classList.add("pt-js")</script>
+<div class="pt-progress" aria-hidden="true"></div>
 <nav class="pt-nav" aria-label="Main">
   <a class="pt-nav__brand" href="#top">B.PARASKA</a>
   <div class="pt-nav__links">
@@ -21,19 +23,32 @@
     <a class="pt-nav__item" href="#work" data-i18n="nav.work">Work</a>
     <a class="pt-nav__item" href="#contact" data-i18n="nav.contact">Contact</a>
   </div>
+  <button class="pt-toggle pt-toggle--hot" type="button" id="pt-menu-open" aria-expanded="false" aria-controls="pt-menu" data-i18n="menu.open">Menu</button>
   <button class="pt-toggle" type="button" id="pt-lang" aria-label="Switch language">UA</button>
   <button class="pt-toggle" type="button" id="pt-theme" aria-label="Switch theme">Light</button>
 </nav>
+
+<div class="pt-menu" id="pt-menu" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="pt-menu__star" aria-hidden="true"></div>
+  <button class="pt-toggle pt-menu__close" type="button" id="pt-menu-close" data-i18n="menu.close">Close</button>
+  <ul class="pt-menu__list">
+    <li style="--i:0"><a class="pt-menu__item" href="#about" data-i18n="nav.about">About</a></li>
+    <li style="--i:1"><a class="pt-menu__item" href="#services" data-i18n="nav.services">What I do</a></li>
+    <li style="--i:2"><a class="pt-menu__item" href="#stack" data-i18n="nav.stack">Stack</a></li>
+    <li style="--i:3"><a class="pt-menu__item" href="#work" data-i18n="nav.work">Work</a></li>
+    <li style="--i:4"><a class="pt-menu__item" href="#contact" data-i18n="nav.contact">Contact</a></li>
+  </ul>
+</div>
 
 <header class="pt-hero" id="top">
   <div class="pt-hero__slab" aria-hidden="true"></div>
   <div class="pt-hero__star" aria-hidden="true"></div>
   <div>
     <p class="pt-kicker" data-i18n="hero.kicker">// Full stack developer</p>
-    <h1 class="pt-ransom" aria-label="Bohdan Paraska"><span aria-hidden="true" style="display:contents"><span class="pt-ransom__word"><i>B</i><i>o</i><i>h</i><i>d</i><i>a</i><i>n</i></span><span class="pt-ransom__word"><i>P</i><i>a</i><i>r</i><i>a</i><i>s</i><i>k</i><i>a</i></span></span></h1>
+    <h1 class="pt-ransom" aria-label="Bohdan Paraska"><span aria-hidden="true" style="display:contents"><span class="pt-ransom__word"><i style="--n:0">B</i><i style="--n:1">o</i><i style="--n:2">h</i><i style="--n:3">d</i><i style="--n:4">a</i><i style="--n:5">n</i></span><span class="pt-ransom__word"><i style="--n:6">P</i><i style="--n:7">a</i><i style="--n:8">r</i><i style="--n:9">a</i><i style="--n:10">s</i><i style="--n:11">k</i><i style="--n:12">a</i></span></span></h1>
     <div class="pt-hero__rule" aria-hidden="true"></div>
     <p class="pt-hero__sub">Python · Odoo · React · PostgreSQL</p>
-    <p class="pt-status"><i aria-hidden="true"></i><span data-i18n="hero.status">SkyTek · Zakarpattia, Ukraine</span></p>
+    <p class="pt-status"><i aria-hidden="true"></i><span data-i18n="hero.status">SkyTek · Lviv, Ukraine</span></p>
     <div class="pt-hero__actions">
       <a class="pt-btn" href="#work" data-i18n="hero.work">See the work</a>
       <a class="pt-btn pt-btn--ghost" href="#contact" data-i18n="hero.contact">Get in touch</a>
@@ -47,37 +62,39 @@
   </div>
 </header>
 
+<div class="pt-ticker" aria-hidden="true"><div class="pt-ticker__track"><span>Python</span><span>Django</span><span>FastAPI</span><span>PostgreSQL</span><span>Odoo 17</span><span>React</span><span>Docker</span><span>Python</span><span>Django</span><span>FastAPI</span><span>PostgreSQL</span><span>Odoo 17</span><span>React</span><span>Docker</span><span>Python</span><span>Django</span><span>FastAPI</span><span>PostgreSQL</span><span>Odoo 17</span><span>React</span><span>Docker</span><span>Python</span><span>Django</span><span>FastAPI</span><span>PostgreSQL</span><span>Odoo 17</span><span>React</span><span>Docker</span></div></div>
+
 <main>
 <section class="pt-block" id="about"><div class="pt-wrap">
-  <h2 class="pt-section"><span class="pt-section__no">01</span><span class="pt-section__text" data-i18n="nav.about">About</span></h2>
-  <div class="pt-callout">
+  <h2 class="pt-section" data-reveal="title"><span class="pt-section__no">01</span><span class="pt-section__text" data-i18n="nav.about">About</span></h2>
+  <div class="pt-callout" data-reveal="left">
     <span class="pt-callout__who">Bohdan</span>
-    <p data-i18n="about.1">Python developer from Zakarpattia, Ukraine. Four years of backend work — Django and FastAPI services, REST APIs, data pipelines and parsers — with React on the front when a project needs one.</p>
+    <p data-i18n="about.1">Python developer from Zakarpattia, now based in Lviv, Ukraine. Four years of backend work — Django and FastAPI services, REST APIs, data pipelines and parsers — with React on the front when a project needs one.</p>
     <p data-i18n="about.2">These days a good share of that Python goes into <strong>Odoo</strong>: custom ERP modules running real shops, kitchens and a production floor. Same language, same ORM instincts, just a far more opinionated framework wrapped around them.</p>
     <p data-i18n="about.3">I like the problems where third-party APIs, messy business processes and a clear interface all have to meet in one place.</p>
   </div>
 </div></section>
 
 <section class="pt-block" id="services"><div class="pt-wrap">
-  <h2 class="pt-section"><span class="pt-section__no">02</span><span class="pt-section__text" data-i18n="nav.services">What I do</span></h2>
+  <h2 class="pt-section" data-reveal="title"><span class="pt-section__no">02</span><span class="pt-section__text" data-i18n="nav.services">What I do</span></h2>
   <div class="pt-grid">
-    <article class="pt-card"><span class="pt-card__no" aria-hidden="true">A</span>
+    <article class="pt-card" data-reveal="up"><span class="pt-card__no" aria-hidden="true">A</span>
       <h3 class="pt-card__title" data-i18n="svc.1.t">Backend and APIs</h3>
       <p class="pt-card__body" data-i18n="svc.1.b">Django and FastAPI services, RESTful API design, webhooks and third-party integrations, authentication, user portals and admin back-offices. The part I have been doing longest and reach for first.</p></article>
-    <article class="pt-card"><span class="pt-card__no" aria-hidden="true">B</span>
+    <article class="pt-card" data-reveal="up"><span class="pt-card__no" aria-hidden="true">B</span>
       <h3 class="pt-card__title" data-i18n="svc.2.t">Data and automation</h3>
       <p class="pt-card__body" data-i18n="svc.2.b">Parsers that survive markup changes, pipelines over large data sets, Redis caching, query tuning, scheduled jobs. Most of my commercial work has had a data problem hiding somewhere inside it.</p></article>
-    <article class="pt-card"><span class="pt-card__no" aria-hidden="true">C</span>
+    <article class="pt-card" data-reveal="up"><span class="pt-card__no" aria-hidden="true">C</span>
       <h3 class="pt-card__title" data-i18n="svc.3.t">ERP on Python — Odoo 17</h3>
       <p class="pt-card__body" data-i18n="svc.3.b">Custom modules for retail and POS, and a greenfield manufacturing stack on native MRP/Stock/Sale with FEFO lot traceability and recipe cost calculation. One rule I do not bend: never edit vendor code.</p></article>
-    <article class="pt-card"><span class="pt-card__no" aria-hidden="true">D</span>
+    <article class="pt-card" data-reveal="up"><span class="pt-card__no" aria-hidden="true">D</span>
       <h3 class="pt-card__title" data-i18n="svc.4.t">Frontend when it is needed</h3>
       <p class="pt-card__body" data-i18n="svc.4.b">React for platforms and landing pages, vanilla JS where a framework would be overkill, PyQt6 when the thing belongs on the desktop.</p></article>
   </div>
 </div></section>
 
 <section class="pt-block" id="stack"><div class="pt-wrap">
-  <h2 class="pt-section"><span class="pt-section__no">03</span><span class="pt-section__text" data-i18n="nav.stack">Stack</span></h2>
+  <h2 class="pt-section" data-reveal="title"><span class="pt-section__no">03</span><span class="pt-section__text" data-i18n="nav.stack">Stack</span></h2>
   <dl class="pt-board">
     <div class="pt-board__row"><dt>Backend</dt><dd><span class="pt-tag pt-tag--hot">Python</span><span class="pt-tag pt-tag--hot">Django</span><span class="pt-tag pt-tag--hot">FastAPI</span><span class="pt-tag pt-tag--hot">REST API</span><span class="pt-tag">Celery</span><span class="pt-tag">BeautifulSoup</span><span class="pt-tag">httpx</span></dd></div>
     <div class="pt-board__row"><dt>Data</dt><dd><span class="pt-tag pt-tag--hot">PostgreSQL</span><span class="pt-tag">Redis</span><span class="pt-tag">SQLite</span><span class="pt-tag">MySQL</span><span class="pt-tag">Pandas</span><span class="pt-tag">NumPy</span><span class="pt-tag">SciPy</span><span class="pt-tag">scikit-learn</span><span class="pt-tag">Jupyter</span></dd></div>
@@ -88,38 +105,38 @@
 </div></section>
 
 <section class="pt-block" id="work"><div class="pt-wrap">
-  <h2 class="pt-section"><span class="pt-section__no">04</span><span class="pt-section__text" data-i18n="work.title">Selected work</span></h2>
+  <h2 class="pt-section" data-reveal="title"><span class="pt-section__no">04</span><span class="pt-section__text" data-i18n="work.title">Selected work</span></h2>
   <div class="pt-grid">
-    <article class="pt-card"><span class="pt-card__no" aria-hidden="true">01</span>
+    <article class="pt-card" data-reveal="up"><span class="pt-card__no" aria-hidden="true">01</span>
       <h3 class="pt-card__title"><a href="https://github.com/ParaskaBohdan/vstup-tracker">vstup-tracker</a></h3>
       <p class="pt-card__body" data-i18n="work.1">Tracker for Ukrainian state-funded admission rankings — estimates your position by score and works out which competitors are real contenders.</p>
       <div class="pt-card__tags"><span class="pt-tag pt-tag--hot">FastAPI</span><span class="pt-tag">SQLite</span><span class="pt-tag">httpx</span><span class="pt-tag">Docker</span></div></article>
-    <article class="pt-card"><span class="pt-card__no" aria-hidden="true">02</span>
+    <article class="pt-card" data-reveal="up"><span class="pt-card__no" aria-hidden="true">02</span>
       <h3 class="pt-card__title"><a href="https://github.com/ParaskaBohdan/haRdQualizer">haRdQualizer</a></h3>
       <p class="pt-card__body" data-i18n="work.2">Desktop audio visualiser you can punch — spectrum bars react to the mouse in real time. Custom engine with FFT and beat detection.</p>
       <div class="pt-card__tags"><span class="pt-tag pt-tag--hot">PyQt6</span><span class="pt-tag">NumPy</span><span class="pt-tag">SciPy</span><span class="pt-tag">pyqtgraph</span></div></article>
-    <article class="pt-card"><span class="pt-card__no" aria-hidden="true">03</span>
+    <article class="pt-card" data-reveal="up"><span class="pt-card__no" aria-hidden="true">03</span>
       <h3 class="pt-card__title"><a href="https://github.com/ParaskaBohdan/Chedryk_Landing">Chedryk_Landing</a></h3>
       <p class="pt-card__body" data-i18n="work.3">Site for a solar station and battery installer — scroll animations, two themes, ROI calculator, CI/CD.</p>
       <div class="pt-card__tags"><span class="pt-tag pt-tag--hot">React</span><span class="pt-tag">PHP</span><span class="pt-tag">Docker</span></div></article>
-    <article class="pt-card"><span class="pt-card__no" aria-hidden="true">04</span>
+    <article class="pt-card" data-reveal="up"><span class="pt-card__no" aria-hidden="true">04</span>
       <h3 class="pt-card__title"><a href="https://github.com/ParaskaBohdan/Diplom">Diplom</a></h3>
       <p class="pt-card__body" data-i18n="work.4">Bachelor thesis — k-nearest neighbours on Bitcoin price history, raw prices vs candlestick patterns.</p>
       <div class="pt-card__tags"><span class="pt-tag pt-tag--hot">Python</span><span class="pt-tag">scikit-learn</span><span class="pt-tag">Jupyter</span></div></article>
   </div>
-  <p class="pt-note" data-i18n="work.note">Most of my commercial work lives in private repositories, so the public side here is mainly pet projects and client sites.</p>
+  <p class="pt-note" data-reveal="up" data-i18n="work.note">Most of my commercial work lives in private repositories, so the public side here is mainly pet projects and client sites.</p>
 </div></section>
 </main>
 
 <section class="pt-cta" id="contact"><div class="pt-wrap">
-  <h2 class="pt-cta__title" data-i18n="cta.title">Let's <em>talk</em></h2>
-  <dl class="pt-contact">
+  <h2 class="pt-cta__title" data-reveal="slam" data-i18n="cta.title">Let's <em>talk</em></h2>
+  <dl class="pt-contact" data-reveal="up">
     <dt data-i18n="cta.email">Email</dt><dd><a href="mailto:bogdannparaska@gmail.com">bogdannparaska@gmail.com</a></dd>
     <dt>GitHub</dt><dd><a href="https://github.com/ParaskaBohdan">github.com/ParaskaBohdan</a></dd>
-    <dt data-i18n="cta.location">Location</dt><dd data-i18n="cta.location.v">Zakarpattia, Ukraine · open to remote and hybrid</dd>
+    <dt data-i18n="cta.location">Location</dt><dd data-i18n="cta.location.v">Lviv, Ukraine · open to remote and hybrid</dd>
     <dt data-i18n="cta.languages">Languages</dt><dd data-i18n="cta.languages.v">Ukrainian (native) · English (B2)</dd>
   </dl>
-  <a class="pt-btn pt-btn--ink" href="mailto:bogdannparaska@gmail.com" data-i18n="cta.button">Send a message</a>
+  <a class="pt-btn pt-btn--ink" data-reveal="up" href="mailto:bogdannparaska@gmail.com" data-i18n="cta.button">Send a message</a>
 </div></section>
 <footer class="pt-footer">© 2026 Bohdan Paraska</footer>
 
@@ -127,10 +144,10 @@
 (function () {
   var UK = {
     "nav.about": "Про мене", "nav.services": "Що я роблю", "nav.stack": "Стек", "nav.work": "Роботи", "nav.contact": "Контакти",
-    "hero.kicker": "// Full stack розробник", "hero.status": "SkyTek · Закарпаття, Україна",
+    "hero.kicker": "// Full stack розробник", "hero.status": "SkyTek · Львів, Україна",
     "hero.work": "Дивитись роботи", "hero.contact": "Написати",
     "stat.years": "Роки досвіду", "stat.companies": "Компанії", "stat.projects": "Проєкти", "stat.english": "Англійська",
-    "about.1": "Python-розробник із Закарпаття. Чотири роки бекенду — сервіси на Django та FastAPI, REST API, конвеєри обробки даних і парсери, плюс React на фронті, коли проєкт цього потребує.",
+    "about.1": "Python-розробник із Закарпаття, зараз мешкаю у Львові. Чотири роки бекенду — сервіси на Django та FastAPI, REST API, конвеєри обробки даних і парсери, плюс React на фронті, коли проєкт цього потребує.",
     "about.2": "Останнім часом чимала частина цього Python іде в <strong>Odoo</strong>: кастомні ERP-модулі, на яких працюють реальні магазини, кухні й виробничий цех. Та сама мова, ті самі звички роботи з ORM — просто значно жорсткіший фреймворк навколо них.",
     "about.3": "Люблю задачі, де в одному місці сходяться чужі API, заплутані бізнес-процеси та зрозумілий інтерфейс.",
     "svc.1.t": "Бекенд та API",
@@ -148,8 +165,8 @@
     "work.4": "Бакалаврська робота — k найближчих сусідів на історії ціни біткоїна: сирі ціни проти свічкових патернів.",
     "work.note": "Більшість комерційної роботи живе в приватних репозиторіях, тож тут переважно пет-проєкти та клієнтські сайти.",
     "cta.title": "Пишіть <em>мені</em>", "cta.email": "Пошта", "cta.location": "Локація", "cta.languages": "Мови",
-    "cta.location.v": "Закарпаття, Україна · віддалено або гібрид", "cta.languages.v": "Українська (рідна) · Англійська (B2)",
-    "cta.button": "Надіслати листа"
+    "cta.location.v": "Львів, Україна · віддалено або гібрид", "cta.languages.v": "Українська (рідна) · Англійська (B2)",
+    "cta.button": "Надіслати листа", "menu.open": "Меню", "menu.close": "Закрити"
   };
   var root = document.documentElement, EN = {};
   var nodes = document.querySelectorAll("[data-i18n]");
@@ -167,6 +184,43 @@
   }
   langBtn.addEventListener("click", function () { setLang(root.lang === "uk" ? "en" : "uk"); });
   themeBtn.addEventListener("click", function () { setTheme(root.dataset.theme === "light" ? "dark" : "light"); });
+
+  // menu overlay
+  var menu = document.getElementById("pt-menu"), openBtn = document.getElementById("pt-menu-open"), closeBtn = document.getElementById("pt-menu-close");
+  function toggleMenu(open) {
+    menu.classList.toggle("is-open", open); openBtn.setAttribute("aria-expanded", open);
+    if (open) setTimeout(function () { menu.querySelector("a").focus(); }, 60); else openBtn.focus({ preventScroll: true });
+  }
+  openBtn.addEventListener("click", function () { toggleMenu(true); });
+  closeBtn.addEventListener("click", function () { toggleMenu(false); });
+  menu.addEventListener("click", function (e) { if (e.target.closest("a")) { menu.classList.remove("is-open"); openBtn.setAttribute("aria-expanded", "false"); } });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && menu.classList.contains("is-open")) toggleMenu(false); });
+
+  // scroll progress
+  var ticking = false;
+  function progress() {
+    var max = root.scrollHeight - window.innerHeight;
+    root.style.setProperty("--pt-progress", max > 0 ? Math.min(1, window.scrollY / max) : 0); ticking = false;
+  }
+  window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(progress); } }, { passive: true });
+
+  // scroll reveal
+  document.querySelectorAll(".pt-grid, .pt-board").forEach(function (g) {
+    Array.prototype.forEach.call(g.children, function (c, i) { c.style.setProperty("--i", i % 4); if (!c.dataset.reveal) c.dataset.reveal = "left"; });
+  });
+  var rev = document.querySelectorAll("[data-reveal]");
+  function done(n) { n.removeAttribute("data-reveal"); n.classList.remove("is-in"); }
+  if (!("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches) rev.forEach(done);
+  else {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        e.target.classList.add("is-in"); io.unobserve(e.target);
+        setTimeout(function () { done(e.target); }, 1600);
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+    rev.forEach(function (n) { io.observe(n); });
+  }
   if (load("pt-lang") === "uk") setLang("uk");
   setTheme(load("pt-theme") || root.dataset.theme || "dark");
 })();
