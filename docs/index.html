@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bohdan Paraska — Full Stack Developer</title>
-<meta name="description" content="Python developer from Zakarpattia, Ukraine. Django, FastAPI, Odoo, React.">
+<meta name="description" content="Python developer based in Lviv, Ukraine. Django, FastAPI, Odoo, React.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="tokens.css">
@@ -12,6 +12,8 @@
 <style>html { scroll-behavior: smooth; scroll-padding-top: 72px; } html, body { margin: 0; }</style>
 </head>
 <body class="pt-page">
+<script>document.documentElement.classList.add("pt-js")</script>
+<div class="pt-progress" aria-hidden="true"></div>
 <nav class="pt-nav" aria-label="Main">
   <a class="pt-nav__brand" href="#top">B.PARASKA</a>
   <div class="pt-nav__links">
@@ -21,19 +23,35 @@
     <a class="pt-nav__item" href="#work" data-i18n="nav.work">Work</a>
     <a class="pt-nav__item" href="#contact" data-i18n="nav.contact">Contact</a>
   </div>
+  <button class="pt-toggle pt-toggle--hot" type="button" id="pt-menu-open" aria-expanded="false" aria-controls="pt-menu" data-i18n="menu.open">Menu</button>
   <button class="pt-toggle" type="button" id="pt-lang" aria-label="Switch language">UA</button>
   <button class="pt-toggle" type="button" id="pt-theme" aria-label="Switch theme">Light</button>
 </nav>
+
+<div class="pt-menu" id="pt-menu" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="pt-menu__wipe" aria-hidden="true"></div>
+  <div class="pt-menu__star" aria-hidden="true"></div>
+  <div class="pt-menu__ghost" aria-hidden="true">01</div>
+  <button class="pt-toggle pt-menu__close" type="button" id="pt-menu-close" data-i18n="menu.close">Close</button>
+  <ul class="pt-menu__list">
+    <li class="pt-menu__cursor" aria-hidden="true" role="presentation"></li>
+    <li style="--i:0"><a class="pt-menu__item" href="#about" data-i18n="nav.about">About</a></li>
+    <li style="--i:1"><a class="pt-menu__item" href="#services" data-i18n="nav.services">What I do</a></li>
+    <li style="--i:2"><a class="pt-menu__item" href="#stack" data-i18n="nav.stack">Stack</a></li>
+    <li style="--i:3"><a class="pt-menu__item" href="#work" data-i18n="nav.work">Work</a></li>
+    <li style="--i:4"><a class="pt-menu__item" href="#contact" data-i18n="nav.contact">Contact</a></li>
+  </ul>
+</div>
 
 <header class="pt-hero" id="top">
   <div class="pt-hero__slab" aria-hidden="true"></div>
   <div class="pt-hero__star" aria-hidden="true"></div>
   <div>
     <p class="pt-kicker" data-i18n="hero.kicker">// Full stack developer</p>
-    <h1 class="pt-ransom" aria-label="Bohdan Paraska"><span aria-hidden="true" style="display:contents"><span class="pt-ransom__word"><i>B</i><i>o</i><i>h</i><i>d</i><i>a</i><i>n</i></span><span class="pt-ransom__word"><i>P</i><i>a</i><i>r</i><i>a</i><i>s</i><i>k</i><i>a</i></span></span></h1>
+    <h1 class="pt-ransom" aria-label="Bohdan Paraska"><span aria-hidden="true" style="display:contents"><span class="pt-ransom__word"><i style="--n:0">B</i><i style="--n:1">o</i><i style="--n:2">h</i><i style="--n:3">d</i><i style="--n:4">a</i><i style="--n:5">n</i></span><span class="pt-ransom__word"><i style="--n:6">P</i><i style="--n:7">a</i><i style="--n:8">r</i><i style="--n:9">a</i><i style="--n:10">s</i><i style="--n:11">k</i><i style="--n:12">a</i></span></span></h1>
     <div class="pt-hero__rule" aria-hidden="true"></div>
     <p class="pt-hero__sub">Python · Odoo · React · PostgreSQL</p>
-    <p class="pt-status"><i aria-hidden="true"></i><span data-i18n="hero.status">SkyTek · Zakarpattia, Ukraine</span></p>
+    <p class="pt-status"><i aria-hidden="true"></i><span data-i18n="hero.status">SkyTek · Lviv, Ukraine</span></p>
     <div class="pt-hero__actions">
       <a class="pt-btn" href="#work" data-i18n="hero.work">See the work</a>
       <a class="pt-btn pt-btn--ghost" href="#contact" data-i18n="hero.contact">Get in touch</a>
@@ -47,37 +65,39 @@
   </div>
 </header>
 
+<div class="pt-ticker" aria-hidden="true"><div class="pt-ticker__track"><span>Python</span><span>Django</span><span>FastAPI</span><span>PostgreSQL</span><span>Odoo 17</span><span>React</span><span>Docker</span><span>Python</span><span>Django</span><span>FastAPI</span><span>PostgreSQL</span><span>Odoo 17</span><span>React</span><span>Docker</span><span>Python</span><span>Django</span><span>FastAPI</span><span>PostgreSQL</span><span>Odoo 17</span><span>React</span><span>Docker</span><span>Python</span><span>Django</span><span>FastAPI</span><span>PostgreSQL</span><span>Odoo 17</span><span>React</span><span>Docker</span></div></div>
+
 <main>
 <section class="pt-block" id="about"><div class="pt-wrap">
-  <h2 class="pt-section"><span class="pt-section__no">01</span><span class="pt-section__text" data-i18n="nav.about">About</span></h2>
-  <div class="pt-callout">
+  <h2 class="pt-section" data-reveal="title"><span class="pt-section__no">01</span><span class="pt-section__text" data-i18n="nav.about">About</span></h2>
+  <div class="pt-callout" data-reveal="left">
     <span class="pt-callout__who">Bohdan</span>
-    <p data-i18n="about.1">Python developer from Zakarpattia, Ukraine. Four years of backend work — Django and FastAPI services, REST APIs, data pipelines and parsers — with React on the front when a project needs one.</p>
+    <p data-i18n="about.1">Python developer from Zakarpattia, now based in Lviv, Ukraine. Four years of backend work — Django and FastAPI services, REST APIs, data pipelines and parsers — with React on the front when a project needs one.</p>
     <p data-i18n="about.2">These days a good share of that Python goes into <strong>Odoo</strong>: custom ERP modules running real shops, kitchens and a production floor. Same language, same ORM instincts, just a far more opinionated framework wrapped around them.</p>
     <p data-i18n="about.3">I like the problems where third-party APIs, messy business processes and a clear interface all have to meet in one place.</p>
   </div>
 </div></section>
 
 <section class="pt-block" id="services"><div class="pt-wrap">
-  <h2 class="pt-section"><span class="pt-section__no">02</span><span class="pt-section__text" data-i18n="nav.services">What I do</span></h2>
+  <h2 class="pt-section" data-reveal="title"><span class="pt-section__no">02</span><span class="pt-section__text" data-i18n="nav.services">What I do</span></h2>
   <div class="pt-grid">
-    <article class="pt-card"><span class="pt-card__no" aria-hidden="true">A</span>
+    <article class="pt-card" data-reveal="up"><span class="pt-card__no" aria-hidden="true">A</span>
       <h3 class="pt-card__title" data-i18n="svc.1.t">Backend and APIs</h3>
       <p class="pt-card__body" data-i18n="svc.1.b">Django and FastAPI services, RESTful API design, webhooks and third-party integrations, authentication, user portals and admin back-offices. The part I have been doing longest and reach for first.</p></article>
-    <article class="pt-card"><span class="pt-card__no" aria-hidden="true">B</span>
+    <article class="pt-card" data-reveal="up"><span class="pt-card__no" aria-hidden="true">B</span>
       <h3 class="pt-card__title" data-i18n="svc.2.t">Data and automation</h3>
       <p class="pt-card__body" data-i18n="svc.2.b">Parsers that survive markup changes, pipelines over large data sets, Redis caching, query tuning, scheduled jobs. Most of my commercial work has had a data problem hiding somewhere inside it.</p></article>
-    <article class="pt-card"><span class="pt-card__no" aria-hidden="true">C</span>
+    <article class="pt-card" data-reveal="up"><span class="pt-card__no" aria-hidden="true">C</span>
       <h3 class="pt-card__title" data-i18n="svc.3.t">ERP on Python — Odoo 17</h3>
       <p class="pt-card__body" data-i18n="svc.3.b">Custom modules for retail and POS, and a greenfield manufacturing stack on native MRP/Stock/Sale with FEFO lot traceability and recipe cost calculation. One rule I do not bend: never edit vendor code.</p></article>
-    <article class="pt-card"><span class="pt-card__no" aria-hidden="true">D</span>
+    <article class="pt-card" data-reveal="up"><span class="pt-card__no" aria-hidden="true">D</span>
       <h3 class="pt-card__title" data-i18n="svc.4.t">Frontend when it is needed</h3>
       <p class="pt-card__body" data-i18n="svc.4.b">React for platforms and landing pages, vanilla JS where a framework would be overkill, PyQt6 when the thing belongs on the desktop.</p></article>
   </div>
 </div></section>
 
 <section class="pt-block" id="stack"><div class="pt-wrap">
-  <h2 class="pt-section"><span class="pt-section__no">03</span><span class="pt-section__text" data-i18n="nav.stack">Stack</span></h2>
+  <h2 class="pt-section" data-reveal="title"><span class="pt-section__no">03</span><span class="pt-section__text" data-i18n="nav.stack">Stack</span></h2>
   <dl class="pt-board">
     <div class="pt-board__row"><dt>Backend</dt><dd><span class="pt-tag pt-tag--hot">Python</span><span class="pt-tag pt-tag--hot">Django</span><span class="pt-tag pt-tag--hot">FastAPI</span><span class="pt-tag pt-tag--hot">REST API</span><span class="pt-tag">Celery</span><span class="pt-tag">BeautifulSoup</span><span class="pt-tag">httpx</span></dd></div>
     <div class="pt-board__row"><dt>Data</dt><dd><span class="pt-tag pt-tag--hot">PostgreSQL</span><span class="pt-tag">Redis</span><span class="pt-tag">SQLite</span><span class="pt-tag">MySQL</span><span class="pt-tag">Pandas</span><span class="pt-tag">NumPy</span><span class="pt-tag">SciPy</span><span class="pt-tag">scikit-learn</span><span class="pt-tag">Jupyter</span></dd></div>
@@ -88,38 +108,38 @@
 </div></section>
 
 <section class="pt-block" id="work"><div class="pt-wrap">
-  <h2 class="pt-section"><span class="pt-section__no">04</span><span class="pt-section__text" data-i18n="work.title">Selected work</span></h2>
+  <h2 class="pt-section" data-reveal="title"><span class="pt-section__no">04</span><span class="pt-section__text" data-i18n="work.title">Recent work</span></h2>
   <div class="pt-grid">
-    <article class="pt-card"><span class="pt-card__no" aria-hidden="true">01</span>
-      <h3 class="pt-card__title"><a href="https://github.com/ParaskaBohdan/vstup-tracker">vstup-tracker</a></h3>
-      <p class="pt-card__body" data-i18n="work.1">Tracker for Ukrainian state-funded admission rankings — estimates your position by score and works out which competitors are real contenders.</p>
-      <div class="pt-card__tags"><span class="pt-tag pt-tag--hot">FastAPI</span><span class="pt-tag">SQLite</span><span class="pt-tag">httpx</span><span class="pt-tag">Docker</span></div></article>
-    <article class="pt-card"><span class="pt-card__no" aria-hidden="true">02</span>
-      <h3 class="pt-card__title"><a href="https://github.com/ParaskaBohdan/haRdQualizer">haRdQualizer</a></h3>
-      <p class="pt-card__body" data-i18n="work.2">Desktop audio visualiser you can punch — spectrum bars react to the mouse in real time. Custom engine with FFT and beat detection.</p>
-      <div class="pt-card__tags"><span class="pt-tag pt-tag--hot">PyQt6</span><span class="pt-tag">NumPy</span><span class="pt-tag">SciPy</span><span class="pt-tag">pyqtgraph</span></div></article>
-    <article class="pt-card"><span class="pt-card__no" aria-hidden="true">03</span>
+    <article class="pt-card" data-reveal="up"><span class="pt-card__no" aria-hidden="true">01</span>
+      <h3 class="pt-card__title" data-i18n="work.1.t">Food factory ERP</h3>
+      <p class="pt-card__body" data-i18n="work.1">Odoo 17 for a producer of semi-finished food: raw material weighed in, recursive recipes, lots with expiry and FEFO, shop-floor kiosk screens for production and shipment, tare and cost per unit, invoices sent to KROS, a B2B portal for customers.</p>
+      <div class="pt-card__tags"><span class="pt-tag pt-tag--hot">Odoo 17</span><span class="pt-tag">MRP / Stock</span><span class="pt-tag">OWL</span><span class="pt-tag">QWeb</span></div></article>
+    <article class="pt-card" data-reveal="up"><span class="pt-card__no" aria-hidden="true">02</span>
+      <h3 class="pt-card__title" data-i18n="work.2.t">SkyTek Tasks</h3>
+      <p class="pt-card__body" data-i18n="work.2">The team's task manager, built inside Odoo: boards that drag like Trello on a phone, a My Day view, subtasks and templates, deadlines that escalate, workload reports, and tasks raised automatically from tax deadlines. Every screen is checked by UI tests in a real browser.</p>
+      <div class="pt-card__tags"><span class="pt-tag pt-tag--hot">Odoo 17</span><span class="pt-tag">OWL</span><span class="pt-tag">Python</span><span class="pt-tag">UI tests</span></div></article>
+    <article class="pt-card" data-reveal="up"><span class="pt-card__no" aria-hidden="true">03</span>
+      <h3 class="pt-card__title" data-i18n="work.3.t">SkyTek Warehouse</h3>
+      <p class="pt-card__body" data-i18n="work.3">Odoo for shops and restaurants: stock documents with lots and serial numbers, a block on selling into negative stock, goods issue notes and stocktakes, fiscal receipts and excise, a POS that works on a phone. I am the lead contributor on this module stack.</p>
+      <div class="pt-card__tags"><span class="pt-tag pt-tag--hot">Odoo 17</span><span class="pt-tag">Point of Sale</span><span class="pt-tag">PRRO / fiscal</span><span class="pt-tag">PostgreSQL</span></div></article>
+    <article class="pt-card" data-reveal="up"><span class="pt-card__no" aria-hidden="true">04</span>
       <h3 class="pt-card__title"><a href="https://github.com/ParaskaBohdan/Chedryk_Landing">Chedryk_Landing</a></h3>
-      <p class="pt-card__body" data-i18n="work.3">Site for a solar station and battery installer — scroll animations, two themes, ROI calculator, CI/CD.</p>
+      <p class="pt-card__body" data-i18n="work.4">Site for a solar station and battery installer — scroll animations, two themes, ROI calculator, CI/CD.</p>
       <div class="pt-card__tags"><span class="pt-tag pt-tag--hot">React</span><span class="pt-tag">PHP</span><span class="pt-tag">Docker</span></div></article>
-    <article class="pt-card"><span class="pt-card__no" aria-hidden="true">04</span>
-      <h3 class="pt-card__title"><a href="https://github.com/ParaskaBohdan/Diplom">Diplom</a></h3>
-      <p class="pt-card__body" data-i18n="work.4">Bachelor thesis — k-nearest neighbours on Bitcoin price history, raw prices vs candlestick patterns.</p>
-      <div class="pt-card__tags"><span class="pt-tag pt-tag--hot">Python</span><span class="pt-tag">scikit-learn</span><span class="pt-tag">Jupyter</span></div></article>
   </div>
-  <p class="pt-note" data-i18n="work.note">Most of my commercial work lives in private repositories, so the public side here is mainly pet projects and client sites.</p>
+  <p class="pt-note" data-reveal="up" data-i18n="work.note">The first three live in private company repositories, so only Chedryk links to its code.</p>
 </div></section>
 </main>
 
 <section class="pt-cta" id="contact"><div class="pt-wrap">
-  <h2 class="pt-cta__title" data-i18n="cta.title">Let's <em>talk</em></h2>
-  <dl class="pt-contact">
+  <h2 class="pt-cta__title" data-reveal="slam" data-i18n="cta.title">Let's <em>talk</em></h2>
+  <dl class="pt-contact" data-reveal="up">
     <dt data-i18n="cta.email">Email</dt><dd><a href="mailto:bogdannparaska@gmail.com">bogdannparaska@gmail.com</a></dd>
     <dt>GitHub</dt><dd><a href="https://github.com/ParaskaBohdan">github.com/ParaskaBohdan</a></dd>
-    <dt data-i18n="cta.location">Location</dt><dd data-i18n="cta.location.v">Zakarpattia, Ukraine · open to remote and hybrid</dd>
+    <dt data-i18n="cta.location">Location</dt><dd data-i18n="cta.location.v">Lviv, Ukraine · open to remote and hybrid</dd>
     <dt data-i18n="cta.languages">Languages</dt><dd data-i18n="cta.languages.v">Ukrainian (native) · English (B2)</dd>
   </dl>
-  <a class="pt-btn pt-btn--ink" href="mailto:bogdannparaska@gmail.com" data-i18n="cta.button">Send a message</a>
+  <a class="pt-btn pt-btn--ink" data-reveal="up" href="mailto:bogdannparaska@gmail.com" data-i18n="cta.button">Send a message</a>
 </div></section>
 <footer class="pt-footer">© 2026 Bohdan Paraska</footer>
 
@@ -127,10 +147,10 @@
 (function () {
   var UK = {
     "nav.about": "Про мене", "nav.services": "Що я роблю", "nav.stack": "Стек", "nav.work": "Роботи", "nav.contact": "Контакти",
-    "hero.kicker": "// Full stack розробник", "hero.status": "SkyTek · Закарпаття, Україна",
+    "hero.kicker": "// Full stack розробник", "hero.status": "SkyTek · Львів, Україна",
     "hero.work": "Дивитись роботи", "hero.contact": "Написати",
     "stat.years": "Роки досвіду", "stat.companies": "Компанії", "stat.projects": "Проєкти", "stat.english": "Англійська",
-    "about.1": "Python-розробник із Закарпаття. Чотири роки бекенду — сервіси на Django та FastAPI, REST API, конвеєри обробки даних і парсери, плюс React на фронті, коли проєкт цього потребує.",
+    "about.1": "Python-розробник із Закарпаття, зараз мешкаю у Львові. Чотири роки бекенду — сервіси на Django та FastAPI, REST API, конвеєри обробки даних і парсери, плюс React на фронті, коли проєкт цього потребує.",
     "about.2": "Останнім часом чимала частина цього Python іде в <strong>Odoo</strong>: кастомні ERP-модулі, на яких працюють реальні магазини, кухні й виробничий цех. Та сама мова, ті самі звички роботи з ORM — просто значно жорсткіший фреймворк навколо них.",
     "about.3": "Люблю задачі, де в одному місці сходяться чужі API, заплутані бізнес-процеси та зрозумілий інтерфейс.",
     "svc.1.t": "Бекенд та API",
@@ -141,15 +161,18 @@
     "svc.3.b": "Кастомні модулі для роздрібу та POS і виробничий стек з нуля на нативних MRP/Stock/Sale з FEFO-простежуваністю партій та розрахунком собівартості рецептур. Правило без винятків: ніколи не правити вендорський код.",
     "svc.4.t": "Фронтенд, коли потрібно",
     "svc.4.b": "React для платформ і лендингів, ванільний JS там, де фреймворк зайвий, PyQt6 — коли продукту місце на десктопі.",
-    "work.title": "Вибрані роботи",
-    "work.1": "Трекер рейтингів вступу на бюджет в Україні — оцінює вашу позицію за балом і визначає, хто з конкурентів справжній претендент.",
-    "work.2": "Десктопний аудіовізуалізатор, який можна штовхати — стовпчики спектра реагують на мишу в реальному часі. Власний рушій із FFT та детекцією біту.",
-    "work.3": "Сайт для монтажника сонячних станцій та акумуляторів — анімації прокрутки, дві теми, калькулятор окупності, CI/CD.",
-    "work.4": "Бакалаврська робота — k найближчих сусідів на історії ціни біткоїна: сирі ціни проти свічкових патернів.",
-    "work.note": "Більшість комерційної роботи живе в приватних репозиторіях, тож тут переважно пет-проєкти та клієнтські сайти.",
+    "work.title": "Останні роботи",
+    "work.1.t": "ERP для харчового заводу",
+    "work.1": "Odoo 17 для виробника напівфабрикатів: прийом сировини з вагами, рекурсивні рецептури, партії з термінами придатності та FEFO, кіоск-екрани для цеху й відвантаження, тара й собівартість одиниці, рахунки у KROS, B2B-портал для клієнтів.",
+    "work.2.t": "SkyTek Задачі",
+    "work.2": "Таск-менеджер команди всередині Odoo: дошки, що тягаються як у Trello навіть на телефоні, «Мій день», підзадачі й шаблони, дедлайни з ескалацією, звіти по завантаженості та задачі, що створюються самі з податкових строків. Кожен екран перевіряють UI-тести у справжньому браузері.",
+    "work.3.t": "SkyTek Склад",
+    "work.3": "Odoo для магазинів і закладів: складські документи з партіями й серійними номерами, заборона продажу в мінус, видаткові накладні й інвентаризації, ПРРО та акциз, POS, що працює з телефона. Я провідний контриб’ютор цього стеку модулів.",
+    "work.4": "Сайт для монтажника сонячних станцій та акумуляторів — анімації прокрутки, дві теми, калькулятор окупності, CI/CD.",
+    "work.note": "Перші три живуть у приватних репозиторіях компанії, тому посилання на код є лише в Chedryk.",
     "cta.title": "Пишіть <em>мені</em>", "cta.email": "Пошта", "cta.location": "Локація", "cta.languages": "Мови",
-    "cta.location.v": "Закарпаття, Україна · віддалено або гібрид", "cta.languages.v": "Українська (рідна) · Англійська (B2)",
-    "cta.button": "Надіслати листа"
+    "cta.location.v": "Львів, Україна · віддалено або гібрид", "cta.languages.v": "Українська (рідна) · Англійська (B2)",
+    "cta.button": "Надіслати листа", "menu.open": "Меню", "menu.close": "Закрити"
   };
   var root = document.documentElement, EN = {};
   var nodes = document.querySelectorAll("[data-i18n]");
@@ -160,13 +183,155 @@
   function setLang(l) {
     var d = l === "uk" ? UK : EN;
     nodes.forEach(function (n) { if (d[n.dataset.i18n]) n.innerHTML = d[n.dataset.i18n]; });
-    root.lang = l; langBtn.textContent = l === "uk" ? "EN" : "UA"; save("pt-lang", l);
+    dress(); root.lang = l; langBtn.textContent = l === "uk" ? "EN" : "UA"; save("pt-lang", l);
   }
   function setTheme(t) {
     root.dataset.theme = t; themeBtn.textContent = t === "dark" ? "Light" : "Dark"; save("pt-theme", t);
   }
   langBtn.addEventListener("click", function () { setLang(root.lang === "uk" ? "en" : "uk"); });
   themeBtn.addEventListener("click", function () { setTheme(root.dataset.theme === "light" ? "dark" : "light"); });
+
+  // menu overlay
+  var menu = document.getElementById("pt-menu"), openBtn = document.getElementById("pt-menu-open"), closeBtn = document.getElementById("pt-menu-close");
+  var items = Array.prototype.slice.call(menu.querySelectorAll(".pt-menu__item"));
+  var cursor = menu.querySelector(".pt-menu__cursor"), ghost = menu.querySelector(".pt-menu__ghost"), sel = 0, closing;
+  function select(n, quiet) {
+    sel = (n + items.length) % items.length;
+    items.forEach(function (a, i) { a.classList.toggle("is-sel", i === sel); });
+    var a = items[sel], li = a.parentNode;
+    cursor.style.left = li.offsetLeft + "px"; cursor.style.top = li.offsetTop + "px";
+    cursor.style.width = a.offsetWidth + "px"; cursor.style.height = a.offsetHeight + "px";
+    cursor.style.setProperty("--rot", sel % 2 ? "3deg" : "-4deg");
+    ghost.textContent = "0" + (sel + 1);
+    if (!quiet) { ghost.classList.remove("is-tick"); void ghost.offsetWidth; ghost.classList.add("is-tick"); }
+  }
+  // cut-out lettering: every letter gets its own lean and size
+  function dress() {
+    var R = [-7, 5, -3, 8, -5, 3], Z = [1, 1.18, 0.9, 1.1, 0.96, 1.06];
+    items.forEach(function (a, n) {
+      var text = a.textContent; a.setAttribute("aria-label", text); a.textContent = "";
+      text.split("").forEach(function (ch, k) {
+        var b = document.createElement("b"); b.setAttribute("aria-hidden", "true");
+        if (ch === " ") b.className = "sp";
+        else {
+          b.textContent = ch; if ((k + n) % 4 === 1) b.className = "x";
+          b.style.setProperty("--r", R[(k + n * 2) % 6] + "deg"); b.style.setProperty("--s", Z[(k + n) % 6]); b.style.setProperty("--k", k);
+        }
+        a.appendChild(b);
+      });
+    });
+    select(sel, true);
+  }
+  function openMenu() {
+    clearTimeout(closing); menu.classList.remove("is-closing", "is-go"); menu.classList.add("is-open");
+    openBtn.setAttribute("aria-expanded", "true"); select(0, true);
+    setTimeout(function () { items[0].focus(); }, 60);
+  }
+  function closeMenu(refocus) {
+    if (!menu.classList.contains("is-open")) return;
+    menu.classList.remove("is-open"); menu.classList.add("is-closing"); openBtn.setAttribute("aria-expanded", "false");
+    closing = setTimeout(function () { menu.classList.remove("is-closing", "is-go"); }, 320);
+    if (refocus) openBtn.focus({ preventScroll: true });
+  }
+  openBtn.addEventListener("click", openMenu);
+  closeBtn.addEventListener("click", function () { closeMenu(true); });
+  items.forEach(function (a, i) {
+    a.addEventListener("mouseenter", function () { if (i !== sel) select(i); });
+    a.addEventListener("focus", function () { if (i !== sel) select(i); });
+    a.addEventListener("click", function () { select(i, true); menu.classList.add("is-go"); setTimeout(function () { closeMenu(false); }, 140); });
+  });
+  document.addEventListener("keydown", function (e) {
+    if (!menu.classList.contains("is-open")) return;
+    if (e.key === "Escape") closeMenu(true);
+    else if (e.key === "ArrowDown" || e.key === "ArrowUp") { e.preventDefault(); select(sel + (e.key === "ArrowDown" ? 1 : -1)); items[sel].focus(); }
+  });
+  window.addEventListener("resize", function () { select(sel, true); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { select(sel, true); });
+
+  // scroll progress
+  var ticking = false;
+  function progress() {
+    var max = root.scrollHeight - window.innerHeight;
+    root.style.setProperty("--pt-progress", max > 0 ? Math.min(1, window.scrollY / max) : 0); ticking = false;
+  }
+  window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(progress); } }, { passive: true });
+
+  // scroll reveal
+  document.querySelectorAll(".pt-grid, .pt-board").forEach(function (g) {
+    Array.prototype.forEach.call(g.children, function (c, i) { c.style.setProperty("--i", i % 4); if (!c.dataset.reveal) c.dataset.reveal = "left"; });
+  });
+  var rev = document.querySelectorAll("[data-reveal]");
+  function done(n) { n.removeAttribute("data-reveal"); n.classList.remove("is-in"); }
+  if (!("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches) rev.forEach(done);
+  else {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        e.target.classList.add("is-in"); io.unobserve(e.target);
+        setTimeout(function () { done(e.target); }, 1600);
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+    rev.forEach(function (n) { io.observe(n); });
+  }
+  var still = matchMedia("(prefers-reduced-motion: reduce)"), fine = matchMedia("(pointer: fine)");
+
+  // hero parallax: slab, star and stats sit at different depths
+  var hero = document.querySelector(".pt-hero"), aim = null;
+  function aimAt() { hero.style.setProperty("--px", aim[0].toFixed(3)); hero.style.setProperty("--py", aim[1].toFixed(3)); aim = null; }
+  hero.addEventListener("pointermove", function (e) {
+    if (still.matches || !fine.matches || window.innerWidth <= 760) return;
+    var r = hero.getBoundingClientRect(), first = !aim;
+    aim = [(e.clientX - r.left) / r.width * 2 - 1, (e.clientY - r.top) / r.height * 2 - 1];
+    if (first) requestAnimationFrame(aimAt);
+  });
+  hero.addEventListener("pointerleave", function () { hero.style.setProperty("--px", 0); hero.style.setProperty("--py", 0); });
+
+  // scroll speed, eased, for the ticker lean
+  var lastY = window.scrollY, vel = 0, leaning = false;
+  function lean() {
+    var y = window.scrollY, want = Math.max(-1, Math.min(1, (y - lastY) / 28));
+    vel += (want - vel) * 0.22; lastY = y;
+    if (Math.abs(vel) < 0.004 && want === 0) { vel = 0; leaning = false; }
+    else requestAnimationFrame(lean);
+    root.style.setProperty("--vel", vel.toFixed(3));
+  }
+  window.addEventListener("scroll", function () {
+    if (!still.matches && !leaning) { leaning = true; requestAnimationFrame(lean); }
+  }, { passive: true });
+
+  // the nav marks the section on screen
+  if ("IntersectionObserver" in window) {
+    var navItems = document.querySelectorAll(".pt-nav__item");
+    var spy = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        navItems.forEach(function (a) {
+          if (a.getAttribute("href") === "#" + e.target.id) a.setAttribute("aria-current", "true");
+          else a.removeAttribute("aria-current");
+        });
+      });
+    }, { rootMargin: "-45% 0px -50% 0px" });
+    navItems.forEach(function (a) { var s = document.querySelector(a.getAttribute("href")); if (s) spy.observe(s); });
+    spy.observe(hero); // back at the top nothing is current
+  }
+
+  // a click throws out a handful of paper shards
+  var SHARD = ["var(--red)", "var(--yellow)", "var(--ink)"];
+  document.addEventListener("pointerdown", function (e) {
+    if (still.matches || e.button !== 0 || !document.body.animate) return;
+    for (var k = 0; k < 7; k++) {
+      var s = document.createElement("i"), a = k / 7 * Math.PI * 2 + Math.random() * 0.6, d = 36 + Math.random() * 48;
+      s.className = "pt-shard"; s.setAttribute("aria-hidden", "true");
+      s.style.left = e.clientX + "px"; s.style.top = e.clientY + "px"; s.style.background = SHARD[k % 3];
+      document.body.appendChild(s);
+      s.animate([
+        { transform: "translate(-50%, -50%) rotate(0deg) scale(1)", opacity: 1 },
+        { transform: "translate(calc(-50% + " + (Math.cos(a) * d).toFixed(1) + "px), calc(-50% + " + (Math.sin(a) * d).toFixed(1) + "px)) rotate(" + Math.round(Math.random() * 540 - 270) + "deg) scale(.2)", opacity: 0 }
+      ], { duration: 420 + Math.random() * 180, easing: "cubic-bezier(.2, .8, .3, 1)" }).onfinish = (function (n) { return function () { n.remove(); }; })(s);
+    }
+  });
+
+  dress();
   if (load("pt-lang") === "uk") setLang("uk");
   setTheme(load("pt-theme") || root.dataset.theme || "dark");
 })();
