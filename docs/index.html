@@ -29,9 +29,12 @@
 </nav>
 
 <div class="pt-menu" id="pt-menu" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="pt-menu__wipe" aria-hidden="true"></div>
   <div class="pt-menu__star" aria-hidden="true"></div>
+  <div class="pt-menu__ghost" aria-hidden="true">01</div>
   <button class="pt-toggle pt-menu__close" type="button" id="pt-menu-close" data-i18n="menu.close">Close</button>
   <ul class="pt-menu__list">
+    <li class="pt-menu__cursor" aria-hidden="true" role="presentation"></li>
     <li style="--i:0"><a class="pt-menu__item" href="#about" data-i18n="nav.about">About</a></li>
     <li style="--i:1"><a class="pt-menu__item" href="#services" data-i18n="nav.services">What I do</a></li>
     <li style="--i:2"><a class="pt-menu__item" href="#stack" data-i18n="nav.stack">Stack</a></li>
@@ -177,7 +180,7 @@
   function setLang(l) {
     var d = l === "uk" ? UK : EN;
     nodes.forEach(function (n) { if (d[n.dataset.i18n]) n.innerHTML = d[n.dataset.i18n]; });
-    root.lang = l; langBtn.textContent = l === "uk" ? "EN" : "UA"; save("pt-lang", l);
+    dress(); root.lang = l; langBtn.textContent = l === "uk" ? "EN" : "UA"; save("pt-lang", l);
   }
   function setTheme(t) {
     root.dataset.theme = t; themeBtn.textContent = t === "dark" ? "Light" : "Dark"; save("pt-theme", t);
@@ -187,14 +190,60 @@
 
   // menu overlay
   var menu = document.getElementById("pt-menu"), openBtn = document.getElementById("pt-menu-open"), closeBtn = document.getElementById("pt-menu-close");
-  function toggleMenu(open) {
-    menu.classList.toggle("is-open", open); openBtn.setAttribute("aria-expanded", open);
-    if (open) setTimeout(function () { menu.querySelector("a").focus(); }, 60); else openBtn.focus({ preventScroll: true });
+  var items = Array.prototype.slice.call(menu.querySelectorAll(".pt-menu__item"));
+  var cursor = menu.querySelector(".pt-menu__cursor"), ghost = menu.querySelector(".pt-menu__ghost"), sel = 0, closing;
+  function select(n, quiet) {
+    sel = (n + items.length) % items.length;
+    items.forEach(function (a, i) { a.classList.toggle("is-sel", i === sel); });
+    var a = items[sel], li = a.parentNode;
+    cursor.style.left = li.offsetLeft + "px"; cursor.style.top = li.offsetTop + "px";
+    cursor.style.width = a.offsetWidth + "px"; cursor.style.height = a.offsetHeight + "px";
+    cursor.style.setProperty("--rot", sel % 2 ? "3deg" : "-4deg");
+    ghost.textContent = "0" + (sel + 1);
+    if (!quiet) { ghost.classList.remove("is-tick"); void ghost.offsetWidth; ghost.classList.add("is-tick"); }
   }
-  openBtn.addEventListener("click", function () { toggleMenu(true); });
-  closeBtn.addEventListener("click", function () { toggleMenu(false); });
-  menu.addEventListener("click", function (e) { if (e.target.closest("a")) { menu.classList.remove("is-open"); openBtn.setAttribute("aria-expanded", "false"); } });
-  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && menu.classList.contains("is-open")) toggleMenu(false); });
+  // cut-out lettering: every letter gets its own lean and size
+  function dress() {
+    var R = [-7, 5, -3, 8, -5, 3], Z = [1, 1.18, 0.9, 1.1, 0.96, 1.06];
+    items.forEach(function (a, n) {
+      var text = a.textContent; a.setAttribute("aria-label", text); a.textContent = "";
+      text.split("").forEach(function (ch, k) {
+        var b = document.createElement("b"); b.setAttribute("aria-hidden", "true");
+        if (ch === " ") b.className = "sp";
+        else {
+          b.textContent = ch; if ((k + n) % 4 === 1) b.className = "x";
+          b.style.setProperty("--r", R[(k + n * 2) % 6] + "deg"); b.style.setProperty("--s", Z[(k + n) % 6]); b.style.setProperty("--k", k);
+        }
+        a.appendChild(b);
+      });
+    });
+    select(sel, true);
+  }
+  function openMenu() {
+    clearTimeout(closing); menu.classList.remove("is-closing", "is-go"); menu.classList.add("is-open");
+    openBtn.setAttribute("aria-expanded", "true"); select(0, true);
+    setTimeout(function () { items[0].focus(); }, 60);
+  }
+  function closeMenu(refocus) {
+    if (!menu.classList.contains("is-open")) return;
+    menu.classList.remove("is-open"); menu.classList.add("is-closing"); openBtn.setAttribute("aria-expanded", "false");
+    closing = setTimeout(function () { menu.classList.remove("is-closing", "is-go"); }, 320);
+    if (refocus) openBtn.focus({ preventScroll: true });
+  }
+  openBtn.addEventListener("click", openMenu);
+  closeBtn.addEventListener("click", function () { closeMenu(true); });
+  items.forEach(function (a, i) {
+    a.addEventListener("mouseenter", function () { if (i !== sel) select(i); });
+    a.addEventListener("focus", function () { if (i !== sel) select(i); });
+    a.addEventListener("click", function () { select(i, true); menu.classList.add("is-go"); setTimeout(function () { closeMenu(false); }, 140); });
+  });
+  document.addEventListener("keydown", function (e) {
+    if (!menu.classList.contains("is-open")) return;
+    if (e.key === "Escape") closeMenu(true);
+    else if (e.key === "ArrowDown" || e.key === "ArrowUp") { e.preventDefault(); select(sel + (e.key === "ArrowDown" ? 1 : -1)); items[sel].focus(); }
+  });
+  window.addEventListener("resize", function () { select(sel, true); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { select(sel, true); });
 
   // scroll progress
   var ticking = false;
@@ -221,6 +270,7 @@
     }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
     rev.forEach(function (n) { io.observe(n); });
   }
+  dress();
   if (load("pt-lang") === "uk") setLang("uk");
   setTheme(load("pt-theme") || root.dataset.theme || "dark");
 })();
