@@ -3,7 +3,7 @@
 
 [class^="pt-"], [class*=" pt-"] { box-sizing: border-box; }
 
-.pt-page { margin: 0; min-height: 100%; background: var(--bg); color: var(--ink); font: 400 16px/26px var(--font-sans); -webkit-font-smoothing: antialiased; }
+.pt-page { overflow-x: clip; margin: 0; min-height: 100%; background: var(--bg); color: var(--ink); font: 400 16px/26px var(--font-sans); -webkit-font-smoothing: antialiased; }
 .pt-wrap { max-width: 1080px; margin: 0 auto; }
 .pt-block { padding: var(--space-8) var(--space-6); }
 .pt-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: var(--space-6); }
@@ -93,7 +93,7 @@
 .pt-hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-5); margin-top: var(--space-6); padding-left: var(--space-2); }
 
 /* ---------- Contact band ---------- */
-.pt-cta { padding: var(--space-9) var(--space-6) var(--space-8); color: var(--on-red); background: var(--red); clip-path: polygon(0 48px, 18% 0, 34% 36px, 62% 8px, 100% 40px, 100% 100%, 0 100%); }
+.pt-cta { overflow: hidden; padding: var(--space-9) var(--space-6) var(--space-8); color: var(--on-red); background: var(--red); clip-path: polygon(0 48px, 18% 0, 34% 36px, 62% 8px, 100% 40px, 100% 100%, 0 100%); }
 .pt-cta__title { margin: 0 0 var(--space-6); font: 400 clamp(40px, 8vw, 96px)/1 var(--font-display); text-transform: uppercase; }
 .pt-cta__title em { display: inline-block; padding: 0 .12em; font-style: normal; color: var(--on-yellow); background: var(--yellow); transform: rotate(var(--tilt-left)); }
 .pt-contact { display: grid; grid-template-columns: max-content 1fr; gap: var(--space-2) var(--space-5); margin: 0 0 var(--space-6); font: 400 18px/28px var(--font-sans); }
@@ -175,7 +175,7 @@
 @keyframes pt-item-in { from { opacity: 0; translate: -160px 0; rotate: -12deg; } 60% { opacity: 1; translate: 18px 0; rotate: 2deg; } to { opacity: 1; translate: 0 0; rotate: 0deg; } }
 .pt-menu__item { position: relative; display: inline-block; padding: var(--space-1) var(--space-5); font: 400 clamp(30px, 6.2vw, 68px)/1.1 var(--font-display); text-transform: uppercase; white-space: nowrap; text-decoration: none; color: var(--on-red); transform: skewX(var(--tilt-skew)) rotate(var(--tilt-left)); transition: scale .14s cubic-bezier(.2, 1.6, .4, 1), translate .14s cubic-bezier(.2, 1.6, .4, 1); }
 li:nth-child(even) > .pt-menu__item { transform: skewX(var(--tilt-skew)) rotate(var(--tilt-right)); }
-.pt-menu__item:focus-visible { outline: none; }
+.pt-menu .pt-menu__list .pt-menu__item:focus-visible { outline: none; }
 /* cut-out lettering: each letter its own size and lean, every fourth on a paper scrap */
 .pt-menu__item b { display: inline-block; font-weight: 400; rotate: var(--r, 0deg); scale: var(--s, 1); }
 .pt-menu__item b.sp { width: .35em; }
